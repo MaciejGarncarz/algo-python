@@ -1,0 +1,23 @@
+https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/703/arraystrings/4501/
+
+Two pointers
+Two pointers is very common technique to solve array and string problems.
+Two integers/pointers that move along iterable.
+Move pointers until the meet.
+
+Example problems: 
+    Is palindrome, 
+    Sum of two integers in array equals target
+    Is Subsequence  https://leetcode.com/problems/is-subsequence/
+
+Sliding Window
+    Move windows with right and left index until some of the requirements are met.
+    Usually you increase right index until until some requirment is not broken.
+    When it is broken you, increase left window until it is fixed.
+    At the end of loop of an collection you calculate based on right and left index and you have result.
+    Very important!
+    Usually when you want to count lenght of the subbarray in anwer you can use:
+        RIGHT - LEFT + 1 !!!!!!!!
+
+
+Prefix Sum

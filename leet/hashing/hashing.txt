@@ -1,0 +1,2 @@
+Ogarnij jak to wychodzi https://leetcode.com/explore/interview/card/leetcodes-interview-crash-course-data-structures-and-algorithms/705/hashing/4512/
+Ostatni przyklad. Rozrysuj

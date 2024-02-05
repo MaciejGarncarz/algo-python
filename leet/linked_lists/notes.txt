@@ -1,0 +1,14 @@
+To remove node from list you can simply do:
+    Have a current node
+    Point current.next to curent.next.next
+    This way next node is skipped over
+
+If reversing nodes is not understandable, relay to my sketchbook
+    Basically you do
+    Iterate until current node is NULL
+    in the loop you do:
+        Keep track of next node before switch
+        assign next node to previous one
+        previous one become current, this is needed for next iteration
+        current node becomes next node I first saved
+    If you do this in the middle of the linked list you will unchain list 
