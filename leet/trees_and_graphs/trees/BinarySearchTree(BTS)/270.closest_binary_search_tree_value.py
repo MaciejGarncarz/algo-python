@@ -37,6 +37,8 @@ def closest_value(root: Optional[TreeNode], target: float) -> int:
             if currentDifference < minDifference:
                 answer = node.val
                 minDifference = currentDifference
+            if currentDifference == minDifference:
+                answer = min(node.val, answer)
             return check_inside(node.left, answer, minDifference)
 
 
