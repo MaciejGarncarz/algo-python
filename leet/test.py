@@ -1,20 +1,35 @@
-import collections
-queue = collections.deque()
+from typing import List
 
-# If you want to initialize it with some initial values:
-queue = collections.deque()
 
-# # Enqueueing/adding elements:
-# queue.append(4)
-# queue.append(5)
+class Solution:
+    def rangeSum(self, nums: List[int], n: int, left: int, right: int) -> int:
+        sums = []
+        MOD = 10**9 + 7
+        start = 0
+        end = n
 
-# Dequeuing/removing elements:
-test = queue.popleft() # 1
-queue.popleft() # 2
-print(test)
+        while start < end:
+            subArray = nums[start:end]
+            curr = 0
+            for x in subArray:
+                curr += x
+                sums.append(curr)
+            start += 1
+        
+        sums.sort()
 
-# Check element at front of queue (next element to be removed)
-queue[0] # 3
+        answer = 0
 
-# Get size
-len(queue) # 3
+        for x in range(left-1, right):
+            answer = (answer + sums[x]) % MOD
+        
+        return answer
+            
+
+
+obj = Solution()
+obj.rangeSum([1,2,3,4], 4, 1, 5)
+
+
+
+        
